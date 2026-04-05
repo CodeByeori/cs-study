@@ -5,4 +5,4 @@
 - while, for, if, switch case, 삼항연산자
 
 ## 26.4.5 배열 알아보기
-- array, SIZE, max 찾기
+- 배열, SIZE, 2차원 배열
