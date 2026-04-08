@@ -2,6 +2,7 @@
 
 void boostAtk(int *atkPtr);
 void boostDef(int *defPtr);
+char *setNickname();
 
 int main()
 {
@@ -18,7 +19,10 @@ int main()
     boostAtk(atkPtr);
     boostDef(defPtr);
 
+    char *nickPtr = setNickname();
+
     printf("\n=== Pikachu's Stats ===\n");
+    printf("Nickname: %s\n", nickPtr);
     printf("Atk : %d\n", baseAtk);
     printf("Def : %d\n", baseDef);
 
@@ -39,4 +43,12 @@ void boostDef(int *defPtr)
     printf("Boost Def: ");
     scanf("%d", &def);
     *defPtr += def;
+}
+
+char *setNickname()
+{
+    static char setNick[20] = {};
+    printf("Type Pikachu's Nickname: ");
+    scanf("%s", setNick);
+    return setNick;
 }
