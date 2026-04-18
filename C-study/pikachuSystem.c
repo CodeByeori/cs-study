@@ -12,7 +12,7 @@ struct stats
     int pikaDef;
 };
 
-void nameing(char *baseName);
+void naming(char *baseName);
 void training(char *nick, char *baseMove);
 void candy(struct stats *pika, char *naMe);
 
